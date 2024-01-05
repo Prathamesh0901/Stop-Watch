@@ -8,7 +8,6 @@ document.querySelector('.js-start-button').addEventListener('click', () => {
     if(!isStarted){
         isStarted = true;
         document.querySelector('.js-start-button').innerHTML = `STOP`;
-        seconds++;
         intervalId = setInterval(() => {
             display();
             seconds++;
